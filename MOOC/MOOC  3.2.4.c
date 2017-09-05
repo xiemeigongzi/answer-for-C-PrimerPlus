@@ -1,28 +1,25 @@
 #include <stdio.h>
 int main()
 {
-	printf("Output the grades:\n");
-	int grade=0;
-	scanf("%d",&grade);
-	int a=grade/10;
-	switch(a){
-		case 10:
-		case 9:
-			printf("A\n");
+	int type;
+	scanf("%d", &type);
+	
+	switch(type){
+		case 1:
+			printf("hello!");
+		//	break;
+		case 1+1:
+			printf("morning!");
 			break;
-		case 8:
-		printf("B\n");
+		case 3:
+			printf("afternoon!");
 			break;
-		case 7:
-		printf("C\n");
+		case 4:
+			printf("good night!");
 			break;
-		case 6:
-		printf("D\n");
-			break;
-		
 		default:
-			printf("F\n");
-		    break;
-			}			
+			printf("Bye!");
+			break;
+	}
 	return 0;
 }

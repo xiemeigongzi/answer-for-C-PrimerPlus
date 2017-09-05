@@ -3,23 +3,42 @@ int main()
 {
 	int x=0;
 	scanf("%d", &x);
-	int a=0;
-	if(x>0)
-	   a=1;
-	else if(x==0)
-	   a=0;
-	else 
-	   a=-1;
-	     
-	switch(a){
-		case 1:
-			printf("NUm is %d",x*2);
-			break;
-		case 0:
-			printf("NUm is %d",0);
-			break;
-		case -1:
-		printf("Num is -1");
+	if(x>=90)
+	{
+		x=1;
 	}
+	else if(x>=80,x<90)
+	{
+		x=2;
+	}
+	else if(x>=70,x<80)
+	{
+		x=3;
+	}
+	else if(x>=60,x<70)
+	{
+		x=4;
+	}
+	else{
+		x=5;
+	}
+	switch(x)
+	{
+		case 1:
+			printf(" Your score is A");
+			break;
+		case 2:
+			printf(" Your score is B");
+			break;
+		case 3:
+			printf(" Your score is C");
+			break;
+		case 4:
+			printf(" Your score is D");
+			break;
+		default:
+			printf(" Your score is E");
+			break;	
+	}	
 	return 0;
 }
