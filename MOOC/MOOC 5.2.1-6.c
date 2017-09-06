@@ -1,21 +1,22 @@
 #include <stdio.h>
 int main()
 {
-	int cnt=0;
 	int x;
-	for(x=1;cnt<=50;x++)
+	scanf("%d", &x);
+	int i;
+	int isPrime=1;
+	for(i=2;i<x;i++)
 	{
-		int i=1;
-		int isPrime=1;
-		for(i=2;i<x;i++){
 		if(x%i==0){
 			isPrime=0;
-			break;
-		} 
+			printf("x=%d i=%d\n", x,i);
+			continue;
+		}
 	}
 	if(isPrime==1){
-	cnt++;
-	printf("%d\n", x);}
-}
+	printf("%d is a Prime\n", x);}
+	else{
+		printf("%d is not a Prime\n", x);
+	}
 	return 0;
 }

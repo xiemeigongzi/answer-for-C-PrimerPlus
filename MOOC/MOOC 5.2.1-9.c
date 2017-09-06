@@ -2,8 +2,8 @@
 int main()
 {
 	int x=100;
-	int k;
-	for(k=1;k<=x;k++)
+	int k=1;
+	while(k<=100)
 	{
 		int i;
 		int isPrime=1;
@@ -16,6 +16,7 @@ int main()
 	}
 	if(isPrime==1)
 	printf("%d is a Prime.\n",k);
+	k++;
 	}
 	return 0;
 }

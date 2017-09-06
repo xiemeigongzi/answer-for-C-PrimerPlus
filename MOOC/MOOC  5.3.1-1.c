@@ -3,20 +3,13 @@ int main()
 {
 	int i;
 	int n;
+	int sign=1;
 	scanf("%d", &n);
-	double sum1=0.0000;
-	double sum2=0.0000;
 	double sum=0;
-	for(i=1;i<=n;i++)
-	{
-		if(n%i==0){
-			sum1=sum1+1/i;
-		}
-		else{
-			sum2=sum2+1/i;
-		}
+	for(i=1;i<=n;i++){
+		sum=sum+1.0*sign/i;
+		sign=-1.0*sign;
 	}
-	sum=sum2-sum1;
-	printf("f is %f", sum);
+	printf("sum is %f", sum);
 	return 0;
 }
