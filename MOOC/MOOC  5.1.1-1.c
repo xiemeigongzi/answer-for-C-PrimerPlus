@@ -1,25 +1,13 @@
 #include <stdio.h>
 int main()
 {
-	int x;
-	scanf("%d", &x);
-	int count=0;
-	int ret=1;
-	
-	while(x>0)
+	int x=10;
+	int i;
+	int product=1;
+	for (i=x;i>=1;i--)
 	{
-		ret=ret*x;
-		x=x-1;
-		//count=count+1;
-	
+		product*=i;
 	}
-	printf("the result is : %d\n",ret);
+	printf("x!=%d \n", product);
 	return 0;
 }
-
-/* x    ret
-   4     4
-   3     12
-   2     24
-   1     24 */
-   

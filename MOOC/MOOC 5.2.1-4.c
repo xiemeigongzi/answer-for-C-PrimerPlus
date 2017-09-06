@@ -13,7 +13,7 @@ int main()
 			}
 		}
 		if(isPrime==1)
-		printf("%d\n", x);		
-}
+		printf("%d\n",x)	;	
+	}
 	return 0;
 }

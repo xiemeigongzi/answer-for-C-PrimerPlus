@@ -1,25 +1,26 @@
 #include <stdio.h>
 int main()
 {
-	
-	int a=100;
-	int b=100;
-	int c=1;
-	int is_Prime=1;
-	for(a;a>0;a--)
+	int 100;
+	//scanf("%d", &x);
+	int isPrime=1;
+	//int i;
+	int n;
+	int k=1;	
+	for(n=1;n<x;n++)
 	{
-		for(b;b<=a;b--)
-		{
-			c=a%b;
-			if(c==0)
-			{
-				is_Prime=0;		
-			}
-			else{
-				printf("%d is a Prime.\n",c);
-			}
-			}
-		}
 		
+		for(k=2;k<n;k++)
+		{
+			if(n%k==0){
+				isPrime=0;
+			    break;	
+			}
+		}	
+		if(isPrime==1)
+		printf("n=%d, k=%d\n",n,k);
+	}
+	
+	
 	return 0;
 }

@@ -1,17 +1,18 @@
 #include <stdio.h>
 int main()
 {
-	int number;
-	int count=0;
-	int sum=0;
-	
-	do{
-	scanf("%d", &number);
-	if(number!=-1){
-		sum=sum+number;
-		count++;
+	int x;
+	scanf("%d", &x);
+	int ret=0;
+	int digit=0;
+	while(x>0)
+	{
+		digit=x%10;
+		ret=ret*10+digit;
+		x=x/10;
+	//	if(x>9){
+		printf("x= %d, digit= %d, ret= %d\n", x,digit, ret);
 	}
-	}while(number!=-1);
-	printf("%f\n",1.0*sum/count);
+	printf("%d", ret);
 	return 0;
 }

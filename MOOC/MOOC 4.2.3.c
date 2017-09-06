@@ -1,18 +1,15 @@
 #include <stdio.h>
 int main()
 {
-	int a;
-	int count=0;
 	int sum=0;
-	
-	scanf("%d", &a);
-	
-	while(a!=-1)
-	{
-		sum=sum+a;
-		count=count+1;
-		scanf("%d", &a);	
+	int cnt=0;
+	int x=0;
+	scanf("%d", &x);
+	while(x!=-1){
+		scanf("%d", &x);
+		sum=sum+x;
+		cnt++;		
 	}
-	printf("average is %f\n", 1.0*sum/count);
+	printf("%f",1.0*sum/cnt);	
 	return 0;
-}
+ } 
