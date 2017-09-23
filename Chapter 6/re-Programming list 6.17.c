@@ -10,12 +10,9 @@ int main()
 		for(row =0; row< ROWS;row++)
 	{
 		for(ch='A';ch<('A'+CHARS);ch++)
-			printf("%c and %d\n", ch, row);
-			printf("\n");
+			printf("%c", ch);
+			print("\n");
 	} 
-
-
-
-	printf("hello world!");
+	
 	return 0;
  } 
