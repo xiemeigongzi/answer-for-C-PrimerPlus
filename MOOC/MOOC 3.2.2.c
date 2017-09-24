@@ -1,16 +1,19 @@
 #include <stdio.h>
 int main()
 {
-	int x=0,f=0;
+	int x;
 	scanf("%d", &x);
-	if(x>0){
-		f=x*2;	}
-    else if(x==0){
-    	f=0;
-	}	
-	else{
-		f=-1;
+	int f;
+	if (x<0)
+	{f=-1;printf("%d", f);
 	}
-	printf("f is %d", f);
+	else if(x==0){
+		f=0;
+		printf("%d", f);
+	}
+	else{
+		f=2*x;
+		printf("%d", f);
+	}
 	return 0;
-} 
+}
